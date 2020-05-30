@@ -57,24 +57,6 @@
                             <type>zip</type>
                             <target>/apps/aem-social-login-packages/application/install</target>
                         </embedded>
-                        <embedded>
-                            <groupId>com.tgt</groupId>
-                            <artifactId>aem-social-login.ui.content</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aem-social-login-packages/content/install</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.content</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aem-social-login-vendor-packages/application/install</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.config</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aem-social-login-vendor-packages/application/install</target>
-                        </embedded>
                     </embeddeds>
                     <subPackages>
                     </subPackages>
@@ -171,24 +153,6 @@
             <groupId>com.tgt</groupId>
             <artifactId>aem-social-login.ui.apps</artifactId>
             <version>${project.version}</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.tgt</groupId>
-            <artifactId>aem-social-login.ui.content</artifactId>
-            <version>${project.version}</version>
-            <type>zip</type>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.content</artifactId>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.config</artifactId>
             <type>zip</type>
         </dependency>
     </dependencies>

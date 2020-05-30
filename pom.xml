@@ -29,9 +29,6 @@
         <module>core</module>
         <module>ui.apps</module>
         <module>ui.apps.structure</module>
-        <module>ui.content</module>
-        <module>it.tests</module>
-        <module>it.launcher</module>
     </modules>
 
     <properties>
@@ -155,7 +152,7 @@
                             </goals>
                             <configuration>
                                 <bnd><![CDATA[
-Bundle-Category: ${componentGroupName}
+Bundle-Category: thegreyteacher
 
 # export all versioned packages except for conditional ones (https://github.com/bndtools/bnd/issues/3721#issuecomment-579026778)
 -exportcontents: ${removeall;${packages;VERSIONED};${packages;CONDITIONAL}}
@@ -668,24 +665,6 @@ Bundle-DocURL:
                 <version>5.7.4</version>
                 <scope>provided</scope>
             </dependency>
-            <dependency>
-                <groupId>com.adobe.cq</groupId>
-                <artifactId>core.wcm.components.core</artifactId>
-                <version>${core.wcm.components.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.adobe.cq</groupId>
-                <artifactId>core.wcm.components.content</artifactId>
-                <type>zip</type>
-                <version>${core.wcm.components.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.adobe.cq</groupId>
-                <artifactId>core.wcm.components.config</artifactId>
-                <type>zip</type>
-                <version>${core.wcm.components.version}</version>
-            </dependency>
-
 
             <!-- Testing -->
             <dependency>

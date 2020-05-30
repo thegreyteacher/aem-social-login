@@ -64,11 +64,6 @@
                     </repositoryStructurePackages>
                     <embeddeds>
                         <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.core</artifactId>
-                            <target>/apps/aem-social-login/install</target>
-                        </embedded>
-                        <embedded>
                             <groupId>com.tgt</groupId>
                             <artifactId>aem-social-login.core</artifactId>
                             <target>/apps/aem-social-login/install</target>
@@ -77,14 +72,6 @@
                     <subPackages>
                     </subPackages>
                     <dependencies>
-                        <dependency>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.content</artifactId>
-                        </dependency>
-                        <dependency>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.config</artifactId>
-                        </dependency>
                     </dependencies>
                 </configuration>
             </plugin>
@@ -134,13 +121,6 @@
             <version>${project.version}</version>
         </dependency>
 
-
-
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.core</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>com.tgt</groupId>
             <artifactId>aem-social-login.ui.apps.structure</artifactId>
@@ -148,17 +128,6 @@
             <type>zip</type>
         </dependency>
 
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.content</artifactId>
-            <type>zip</type>
-        </dependency>
-
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.config</artifactId>
-            <type>zip</type>
-        </dependency>
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>uber-jar</artifactId>

@@ -232,7 +232,8 @@ public class GoogleProvider implements Provider {
      * Called after a user is created by Granite.
      * <p>
      * This method can be used to do any processing after the user has been created successfully like adding it to a
-     * group or mapping the user properties to a different path.
+     * group on the basis of some conditions as per business requirements or mapping the user properties to a different
+     * path.
      *
      * @param user {@link User}
      */
